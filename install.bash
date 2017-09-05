@@ -1,16 +1,18 @@
 
-# give full path of folder where you store binary executables (e.g. /usr/local/bin )
 
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 2 ]; then
     echo "Illegal number of parameters"
+    echo "Arg 1: give full path of folder where you store binary executables (e.g. /usr/local/bin )"
+    echo "Arg 2: give full path of folder where you store astrometry.net index files"
+    echo "exiting"
     exit 1
 fi
 
-echo "About to install the required binaries in this folder $1 and the astrometry.cfg file in this folder $2 so that $3 points to where your astrometry.net index files are located."
+echo "About to install the required binaries (and config file) in this folder: $1 .  And sets up your astrometry.cfg file so that it points to where your astrometry.net index files are located: $2"
 
-echo "add_path $3" >> astrometry.cfg
+echo "add_path $2" >> astrometry.cfg
 
-cp astrometry.cfg $2
+cp astrometry.cfg $1
 
 cd /tmp
 
