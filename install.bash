@@ -1,14 +1,14 @@
 
 # give full path of folder where you store binary executables (e.g. /usr/local/bin )
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 3 ]; then
     echo "Illegal number of parameters"
     exit 1
 fi
 
-echo "About to install the required binaries in this folder $1 and the astrometry.cfg file in this folder $2"
+echo "About to install the required binaries in this folder $1 and the astrometry.cfg file in this folder $2 so that $3 points to where your astrometry.net index files are located."
 
-echo "add_path" >> astrometry.cfg
+echo "add_path $3" >> astrometry.cfg
 
 cp astrometry.cfg $2
 

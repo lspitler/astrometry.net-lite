@@ -25,10 +25,10 @@ You should just be able to run the following on your command-line:
 ```
 git clone https://github.com/lspitler/astrometry.net-lite.git
 cd astrometry.net-lite
-bash install.bash /path/to/binaries /path/to/astrometry.cfg/folder
+bash install.bash /path/to/binaries /path/to/astrometry.cfg/folder /path/to/astrometry.net/index/files
 ```
 
-Replace `/path/to/binaries` with where you want the executable files to live.
+Replace `/path/to/binaries` with where you want the executable files to live, `/path/to/astrometry.cfg/folder` for a system-wide configuration of astrometry.net-lite and `/path/to/astrometry.net/index/files` to where the astrometry.net index files are located.
 
 
 ## Acknowledgments
