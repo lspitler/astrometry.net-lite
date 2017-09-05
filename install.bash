@@ -1,12 +1,16 @@
 
 # give full path of folder where you store binary executables (e.g. /usr/local/bin )
 
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 2 ]; then
     echo "Illegal number of parameters"
     exit 1
 fi
 
-echo "About to install the required binaries in $1"
+echo "About to install the required binaries in this folder $1 and the astrometry.cfg file in this folder $2"
+
+echo "add_path" >> astrometry.cfg
+
+cp astrometry.cfg $2
 
 cd /tmp
 
