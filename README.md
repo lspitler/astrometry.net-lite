@@ -1,4 +1,4 @@
-# astrometry.net-lite
+# astrometry.net-no-python
 
 Just a script to download and install just the bare minimum of [astrometry.net](http://astrometry.net/use.html). The neat thing is that you don't need to use python2, which is great if your code calls astrometry.net in a python3 script.
 
@@ -23,8 +23,8 @@ Download some astronomy.net index files for wide-field images [here](http://broi
 You should just be able to run the following on your command-line:
 
 ```
-git clone https://github.com/lspitler/astrometry.net-lite.git
-cd astrometry.net-lite
+git clone https://github.com/lspitler/astrometry.net-no-python.git
+cd astrometry.net-no-python
 bash install.bash /path/to/binaries /path/to/astrometry.net/index/files
 ```
 
