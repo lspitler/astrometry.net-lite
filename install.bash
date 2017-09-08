@@ -33,7 +33,7 @@ cp solve-field $1
 
 echo
 echo
-echo "Astrometry.net-lite installation all DONE!"
+echo "Astrometry.net-no-python installation all DONE!"
 echo
 echo "If anything fails, make sure supporting libraries are installed here:"
 echo "http://astrometry.net/doc/build.html#mac-os-x-using-homebrew"
