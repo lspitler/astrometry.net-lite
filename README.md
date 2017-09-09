@@ -2,7 +2,7 @@
 
 Just a script to download and install just the bare minimum of [astrometry.net](http://astrometry.net/use.html). The neat thing is that you don't need to use python2, which is great if your code calls astrometry.net in a python3 script.
 
-*Note it requires that you give astrometry.net a binary fits file of the star locations. You won't be able to find stars using the built-in astrometry.net search tool.
+**Note it requires that you give astrometry.net a binary fits file of the star locations. You won't be able to find stars using the built-in astrometry.net search tool.**
 
 ## Getting Started
 
@@ -13,6 +13,13 @@ Building and installation of the required astrometry.net binaries is decribed be
 where `[basefilename]` is just the base name for the input binary fits file (described [here](http://astrometry.net/doc/build-index.html#prepare-fits)) and the basename for all the output files.
 
 ### Prerequisites
+
+You'll need to install the following packages on a relatively fresh install (here shown for OSX homebrew):
+```
+brew install pkg-config
+brew install md5sha1sum
+brew install cfitsio
+```
 
 You might need to install stuff described [here](http://astrometry.net/doc/build.html#mac-os-x-using-homebrew). But go ahead and try running it first to see if anything fails during compilation.
 
