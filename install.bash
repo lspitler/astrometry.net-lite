@@ -9,9 +9,9 @@ if [ "$#" -ne 2 ]; then
 fi
 
 echo "About to install the required binaries (and config file) in this folder: $1 .  And sets up your astrometry.cfg file so that it points to where your astrometry.net index files are located: $2"
-
 echo "add_path $2" >> astrometry.cfg
 
+mkdir $1
 cp astrometry.cfg $1
 
 cd /tmp
