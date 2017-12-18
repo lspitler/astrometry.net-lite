@@ -30,8 +30,8 @@ Download some astronomy.net index files for wide-field images [here](http://broi
 You should just be able to run the following on your command-line:
 
 ```
-git clone https://github.com/lspitler/astrometry.net-no-python.git
-cd astrometry.net-no-python
+git clone https://github.com/lspitler/astrometry.net-lite.git
+cd astrometry.net-lite
 bash install.bash /path/to/binaries /path/to/astrometry.net/index/files
 ```
 
